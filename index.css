@@ -1,0 +1,68 @@
+:root{
+    --background-color: #1B244A;
+    --team-color: #EEEEEE;
+    --score-color: #F94F6D;
+    --btn-color: #9AABD8;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background-color);
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 40px;
+    color: var(--team-color);
+    margin-bottom: 1rem;
+}
+
+.box{
+    font-size: 90px; 
+    text-align: center;
+    color: var(--score-color);
+    margin-left: auto;
+    margin-right: auto; 
+    margin-bottom: 1rem;
+    width: 150px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+.btn-container{
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 10px;
+}
+
+button{
+    width: 45px;
+    height: 45px;
+    color: var(--btn-color);
+    background-color: transparent;
+    border: 2px solid var(--btn-color);
+    border-radius: 5px; 
+}
+
+button:hover{
+    cursor: crosshair;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+button:focus{
+    outline: none;
+}
+
+button:active{
+    transform: scaleY($1);
+}
